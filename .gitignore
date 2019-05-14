@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/TrySignalR
+/TrySignalR.App/.vs/TrySignalR.App
+/TrySignalR.App/obj
+/TrySignalR.App/node_modules
+/TrySignalR.App/bin
