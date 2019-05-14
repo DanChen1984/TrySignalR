@@ -26,7 +26,7 @@
                                      style="height: 600px"
                                      class="scroll-y">
                             <v-layout column>
-                                <div v-for="message in MessageHistory" class="messageMargin">
+                                <div v-for="message in messageHistory" class="messageMargin">
                                     {{ message }}
                                 </div>
                             </v-layout>
@@ -37,7 +37,7 @@
                 <v-flex xs11 offset-xs1>
                     <v-card flat style="margin-left: 5px;">
                         <v-layout row>
-                            <v-text-field solo v-model="Message" placeholder="please type your message.." v-on:keyup.native="sendMessageByEnter"></v-text-field>
+                            <v-text-field solo v-model="message" placeholder="please type your message.." v-on:keyup.native="sendMessageByEnter"></v-text-field>
                             <v-btn color="info" v-on:click.native="sendMessage">Send Message</v-btn>
                         </v-layout>
                     </v-card>
@@ -58,38 +58,52 @@
     export default {
 
         data() {
-            return {
-                connection: null,
-
-                onlineUsers: [],
-
-                MessageHistory: ["[ System ]: Connecting.."],
-                Message: "",
-
-                isNewMessage: false
+            return {                
             }
         },
 
         computed: {
+
+            message: {
+
+                get() {
+                    return this.$store.state.message
+                },
+
+                set(value) {
+                    this.$store.commit("updateState", { key: "message", value: value })
+                }
+
+            },
+
             ...mapState({
+
                 userLogin: 'userLogin',
+
+                connection: 'connection',
+
+                onlineUsers: 'onlineUsers',
+
+                messageHistory: 'messageHistory',  
+
+                isNewMessage: 'isNewMessage',
             }),
         },
 
         methods: {
 
-            sendMessage() {
+            sendMessage() {                
 
-                if (this.Message === null || this.Message === "") {
+                if (this.message === null || this.message === "") {
                     return;
                 }
 
                 try {
-                    this.connection.invoke("SendMessage", this.userLogin, this.Message).catch(function (err) {
+                    this.connection.invoke("SendMessage", this.userLogin, this.message).catch(function (err) {
                         return console.error(err.toString());
                     });
 
-                    this.Message = "";
+                    this.$store.commit('updateState', { key: "message", value: "" })
                 }
                 catch (err) {
                     window.alert(err)
@@ -102,19 +116,18 @@
                 }
             },
             appendMessage(user, message) {
-                this.MessageHistory.push("[ " + user + " ]: " + message);
-                this.isNewMessage = true;
+                this.$store.commit('updateMessageHistory', { message: "[ " + user + " ]: " + message })
+                this.$store.commit("updateState", { key: 'isNewMessage', value: true })
             },
             connected() {
-                this.MessageHistory.push("[ System ]: Connected. You can chat now..");
+                this.$store.commit('updateMessageHistory', { message: "[ System ]: Connected. You can chat now.." })
 
                 this.connection.invoke("Connected", this.userLogin).catch(function (err) {
                     return console.error(err.toString());
                 });
             },
             updateOnlineUsers(userList) {
-                console.log(userList);
-                this.onlineUsers = userList;
+                this.$store.commit('updateState', { key: 'onlineUsers', value: userList })
             },
 
 
@@ -126,7 +139,7 @@
 
                 var scroll = this.$refs["myScroll"];
                 scroll.scrollTop = 999999;
-                this.isNewMessage = false;
+                this.$store.commit('updateState',  { key: 'isNewMessage', value: false })
             }
         }, 
 
@@ -140,22 +153,26 @@
                 this.$router.push({ path: '/' });
             }
             else {
-                "use strict";
 
-                var conn = new HubConnectionBuilder().withUrl("/chatHub").build();
+                if (this.connection === undefined || this.connection === null) {
+                    "use strict";
 
-                //Disable send button until connection is established
-                //document.getElementById("sendButton").disabled = true;            
+                    var conn = new HubConnectionBuilder().withUrl("/chatHub").build();
 
-                conn.on("ReceiveMessage", this.appendMessage);
+                    //Disable send button until connection is established
+                    //document.getElementById("sendButton").disabled = true;            
 
-                conn.on("UpdateOnlineUsers", this.updateOnlineUsers);
+                    conn.on("ReceiveMessage", this.appendMessage);
 
-                conn.start().then(this.connected).catch(function (err) {
-                    return console.error(err.toString());
-                });
+                    conn.on("UpdateOnlineUsers", this.updateOnlineUsers);
 
-                this.connection = conn;
+                    conn.start().then(this.connected).catch(function (err) {
+                        return console.error(err.toString());
+                    });
+
+                    this.$store.commit('updateState', { key: 'connection', value: conn })
+                }
+                
             }
         }
     }

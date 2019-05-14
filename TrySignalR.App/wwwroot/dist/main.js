@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d28b6e0926a47117de5c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2a8d2b7877730a38a54c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -12706,7 +12706,7 @@ module.exports = function() {
 /* 20 */
 /***/ (function(module, exports) {
 
-module.exports = vendor_d450bdffc534983b9dca;
+module.exports = vendor_ce387d8344c692a263e0;
 
 /***/ }),
 /* 21 */
@@ -13856,7 +13856,7 @@ exports = module.exports = __webpack_require__(19)();
 
 
 // module
-exports.push([module.i, "/* This file should be reviewed. It's not optimal, but it works for now. */\n.navbar {\n    display: list-item;\n}\n\n/* Highlighting rules for nav menu items */\n.nav-item a.active,\n.nav-item a.active:hover,\n.nav-item a.active:focus {\n    background-color: #4189C7;\n    color: white;\n    text-decoration: underline;\n}\n\n.nav-item a,\n.nav-item a:hover,\n.nav-item a:focus {\n    color: white;\n}\n\n/* Keep the nav menu independent of scrolling and on top of other items */\n.main-nav {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 1;\n}\n\n@media (max-width: 767px) {\n    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */\n    body {\n        padding-top: 50px;\n    }\n}\n\n@media (min-width: 768px) {\n    /* On small screens, convert the nav menu to a vertical sidebar */\n    .main-nav {\n        height: 80px;\n        width: 100%;\n    }    \n    .main-nav .navbar {\n        border-radius: 0px;\n        border-width: 0px;\n        height: 100%;\n    }\n    .navbar-expand-md .navbar-nav {\n        flex-direction: column;\n    }\n    .navbar-header {\n        float: none;\n    }\n    .navbar-collapse {\n        border-top: 1px solid #444;\n        padding: 0px;\n    }\n    .navbar-collapse ul {\n        float: none;\n    }\n    .nav-item {\n        float: none;\n        font-size: 15px;\n        margin: 6px;\n    }\n    .nav-item a {\n        padding: 10px 16px;\n        border-radius: 4px;\n        color: white;\n    }\n    \n    .navbar a {\n        /* If a menu item's text is too long, truncate it */\n        width: 95%; /* Bug to fix here. Width 100% overflow. */\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n}\n", ""]);
+exports.push([module.i, "/* This file should be reviewed. It's not optimal, but it works for now. */\r\n.navbar {\r\n    display: list-item;\r\n}\r\n\r\n/* Highlighting rules for nav menu items */\r\n.nav-item a.active,\r\n.nav-item a.active:hover,\r\n.nav-item a.active:focus {\r\n    background-color: #4189C7;\r\n    color: white;\r\n    text-decoration: underline;\r\n}\r\n\r\n.nav-item a,\r\n.nav-item a:hover,\r\n.nav-item a:focus {\r\n    color: white;\r\n}\r\n\r\n/* Keep the nav menu independent of scrolling and on top of other items */\r\n.main-nav {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 1;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */\r\n    body {\r\n        padding-top: 50px;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    /* On small screens, convert the nav menu to a vertical sidebar */\r\n    .main-nav {\r\n        height: 80px;\r\n        width: 100%;\r\n    }    \r\n    .main-nav .navbar {\r\n        border-radius: 0px;\r\n        border-width: 0px;\r\n        height: 100%;\r\n    }\r\n    .navbar-expand-md .navbar-nav {\r\n        flex-direction: column;\r\n    }\r\n    .navbar-header {\r\n        float: none;\r\n    }\r\n    .navbar-collapse {\r\n        border-top: 1px solid #444;\r\n        padding: 0px;\r\n    }\r\n    .navbar-collapse ul {\r\n        float: none;\r\n    }\r\n    .nav-item {\r\n        float: none;\r\n        font-size: 15px;\r\n        margin: 6px;\r\n    }\r\n    .nav-item a {\r\n        padding: 10px 16px;\r\n        border-radius: 4px;\r\n        color: white;\r\n    }\r\n    \r\n    .navbar a {\r\n        /* If a menu item's text is too long, truncate it */\r\n        width: 95%; /* Bug to fix here. Width 100% overflow. */\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -13898,7 +13898,7 @@ exports = module.exports = __webpack_require__(19)();
 
 
 // module
-exports.push([module.i, "\n.viewContainer{\n    margin-left: 20px;\n    margin-right: 20px;\n}\n\n", "", {"version":3,"sources":["C:/Users/dchen15/source/repos/TrySignalR/TrySignalR.App/ClientApp/components/ClientApp\\components/app-root.vue"],"names":[],"mappings":";AA4EA;IACA,kBAAA;IACA,mBAAA;CACA","file":"app-root.vue","sourcesContent":["<template>\r\n    <v-app>\r\n        <!--<div id=\"app\" class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <nav-menu params=\"route: route\"></nav-menu>\r\n        </div>\r\n        <div class=\"row\">\r\n            <router-view></router-view>\r\n        </div>\r\n    </div>-->\r\n\r\n        <v-container fluid>\r\n            <v-layout row>\r\n                <nav-menu v-if=\"userLogin\" params=\"route: route\"></nav-menu>\r\n            </v-layout>\r\n\r\n            <v-layout>\r\n                <div style=\"height:80px;\"></div>\r\n            </v-layout>\r\n\r\n            <v-layout row>\r\n                <v-flex xs12>\r\n                    <router-view class=\"viewContainer\"></router-view>\r\n                </v-flex>\r\n            </v-layout>\r\n\r\n        </v-container>\r\n\r\n        <confirm />\r\n\r\n        <message />\r\n\r\n        <busyIndicator />\r\n\r\n    </v-app>\r\n\r\n</template>\r\n\r\n<script>\r\n    import NavMenu from './shared/nav-menu'\r\n    import Confirm from './shared/confirm';\r\n    import Message from './shared/message';\r\n    import BusyIndicator from './shared/busyIndicator';\r\n\r\n    import { mapState } from 'vuex'\r\n\r\n    export default {\r\n        components: {\r\n            'nav-menu': NavMenu,\r\n            'confirm': Confirm,\r\n            'message': Message,\r\n            'busyIndicator': BusyIndicator\r\n        },\r\n\r\n        data() {\r\n            return {}\r\n        },\r\n\r\n        mounted() {\r\n            //this.$root.$busyIndicator = this.$refs.busyIndicator\r\n            //this.$root.$confirm = this.$refs.confirm.open\r\n            //this.$root.$message = this.$refs.message.show\r\n        },\r\n\r\n        computed: {\r\n\r\n            ...mapState({\r\n                userLogin: 'userLogin',\r\n            }),\r\n        },\r\n\r\n    }\r\n</script>\r\n\r\n<style>\r\n\r\n    .viewContainer{\r\n        margin-left: 20px;\r\n        margin-right: 20px;\r\n    }\r\n\r\n</style>\r\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.viewContainer{\n    margin-left: 20px;\n    margin-right: 20px;\n}\n\n", "", {"version":3,"sources":["C:/Users/dchen15/source/repos/DanChen1984/TrySignalR/TrySignalR.App/ClientApp/components/ClientApp\\components/app-root.vue"],"names":[],"mappings":";AA4EA;IACA,kBAAA;IACA,mBAAA;CACA","file":"app-root.vue","sourcesContent":["<template>\r\n    <v-app>\r\n        <!--<div id=\"app\" class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <nav-menu params=\"route: route\"></nav-menu>\r\n        </div>\r\n        <div class=\"row\">\r\n            <router-view></router-view>\r\n        </div>\r\n    </div>-->\r\n\r\n        <v-container fluid>\r\n            <v-layout row>\r\n                <nav-menu v-if=\"userLogin\" params=\"route: route\"></nav-menu>\r\n            </v-layout>\r\n\r\n            <v-layout>\r\n                <div style=\"height:80px;\"></div>\r\n            </v-layout>\r\n\r\n            <v-layout row>\r\n                <v-flex xs12>\r\n                    <router-view class=\"viewContainer\"></router-view>\r\n                </v-flex>\r\n            </v-layout>\r\n\r\n        </v-container>\r\n\r\n        <confirm />\r\n\r\n        <message />\r\n\r\n        <busyIndicator />\r\n\r\n    </v-app>\r\n\r\n</template>\r\n\r\n<script>\r\n    import NavMenu from './shared/nav-menu'\r\n    import Confirm from './shared/confirm';\r\n    import Message from './shared/message';\r\n    import BusyIndicator from './shared/busyIndicator';\r\n\r\n    import { mapState } from 'vuex'\r\n\r\n    export default {\r\n        components: {\r\n            'nav-menu': NavMenu,\r\n            'confirm': Confirm,\r\n            'message': Message,\r\n            'busyIndicator': BusyIndicator\r\n        },\r\n\r\n        data() {\r\n            return {}\r\n        },\r\n\r\n        mounted() {\r\n            //this.$root.$busyIndicator = this.$refs.busyIndicator\r\n            //this.$root.$confirm = this.$refs.confirm.open\r\n            //this.$root.$message = this.$refs.message.show\r\n        },\r\n\r\n        computed: {\r\n\r\n            ...mapState({\r\n                userLogin: 'userLogin',\r\n            }),\r\n        },\r\n\r\n    }\r\n</script>\r\n\r\n<style>\r\n\r\n    .viewContainer{\r\n        margin-left: 20px;\r\n        margin-right: 20px;\r\n    }\r\n\r\n</style>\r\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -13912,7 +13912,7 @@ exports = module.exports = __webpack_require__(19)();
 
 
 // module
-exports.push([module.i, "\n.userMargin {\n    margin-bottom: 20px;\n}\n.messageMargin {\n    margin-bottom: 20px;\n}\n", "", {"version":3,"sources":["C:/Users/dchen15/source/repos/TrySignalR/TrySignalR.App/ClientApp/components/home/ClientApp\\components\\home/home-page.vue"],"names":[],"mappings":";AAoKA;IACA,oBAAA;CACA;AACA;IACA,oBAAA;CACA","file":"home-page.vue","sourcesContent":["<template>\r\n    <div>\r\n\r\n        <h3>Welcome to Chatting Room</h3>\r\n\r\n        <v-container grid-list-md>\r\n            <v-layout row wrap>\r\n\r\n                <v-flex xs1>\r\n                    <v-card>\r\n                        <v-container ref=\"userScroll\"\r\n                                        style=\"height: 600px\"\r\n                                        class=\"scroll-y\">\r\n                            <v-layout column>\r\n                                <div v-for=\"user in onlineUsers\" class=\"userMargin\">\r\n                                    {{ user }}\r\n                                </div>\r\n                            </v-layout>\r\n                        </v-container>                            \r\n                    </v-card>\r\n                </v-flex>\r\n\r\n                <v-flex xs11>\r\n                    <v-card>\r\n                        <v-container ref=\"myScroll\"\r\n                                     style=\"height: 600px\"\r\n                                     class=\"scroll-y\">\r\n                            <v-layout column>\r\n                                <div v-for=\"message in MessageHistory\" class=\"messageMargin\">\r\n                                    {{ message }}\r\n                                </div>\r\n                            </v-layout>\r\n                        </v-container>\r\n                    </v-card>\r\n                </v-flex>\r\n\r\n                <v-flex xs11 offset-xs1>\r\n                    <v-card flat style=\"margin-left: 5px;\">\r\n                        <v-layout row>\r\n                            <v-text-field solo v-model=\"Message\" placeholder=\"please type your message..\" v-on:keyup.native=\"sendMessageByEnter\"></v-text-field>\r\n                            <v-btn color=\"info\" v-on:click.native=\"sendMessage\">Send Message</v-btn>\r\n                        </v-layout>\r\n                    </v-card>\r\n                </v-flex>\r\n\r\n            </v-layout>\r\n        </v-container>\r\n\r\n\r\n    </div>\r\n</template>\r\n\r\n\r\n<script>\r\n    import { mapState } from 'vuex'\r\n    import { HubConnectionBuilder} from '@aspnet/signalr'\r\n\r\n    export default {\r\n\r\n        data() {\r\n            return {\r\n                connection: null,\r\n\r\n                onlineUsers: [],\r\n\r\n                MessageHistory: [\"[ System ]: Connecting..\"],\r\n                Message: \"\",\r\n\r\n                isNewMessage: false\r\n            }\r\n        },\r\n\r\n        computed: {\r\n            ...mapState({\r\n                userLogin: 'userLogin',\r\n            }),\r\n        },\r\n\r\n        methods: {\r\n\r\n            sendMessage() {\r\n\r\n                if (this.Message === null || this.Message === \"\") {\r\n                    return;\r\n                }\r\n\r\n                try {\r\n                    this.connection.invoke(\"SendMessage\", this.userLogin, this.Message).catch(function (err) {\r\n                        return console.error(err.toString());\r\n                    });\r\n\r\n                    this.Message = \"\";\r\n                }\r\n                catch (err) {\r\n                    window.alert(err)\r\n                    console.log(err)\r\n                }\r\n            },\r\n            sendMessageByEnter(e) {\r\n                if (e.keyCode === 13) {\r\n                    this.sendMessage();\r\n                }\r\n            },\r\n            appendMessage(user, message) {\r\n                this.MessageHistory.push(\"[ \" + user + \" ]: \" + message);\r\n                this.isNewMessage = true;\r\n            },\r\n            connected() {\r\n                this.MessageHistory.push(\"[ System ]: Connected. You can chat now..\");\r\n\r\n                this.connection.invoke(\"Connected\", this.userLogin).catch(function (err) {\r\n                    return console.error(err.toString());\r\n                });\r\n            },\r\n            updateOnlineUsers(userList) {\r\n                console.log(userList);\r\n                this.onlineUsers = userList;\r\n            },\r\n\r\n\r\n            scrollToBottom() {\r\n\r\n                if (!this.isNewMessage) {\r\n                    return;\r\n                }\r\n\r\n                var scroll = this.$refs[\"myScroll\"];\r\n                scroll.scrollTop = 999999;\r\n                this.isNewMessage = false;\r\n            }\r\n        }, \r\n\r\n        updated() {\r\n            this.scrollToBottom()\r\n        },\r\n\r\n        created() {\r\n\r\n            if (this.userLogin === undefined || this.userLogin === '') {\r\n                this.$router.push({ path: '/' });\r\n            }\r\n            else {\r\n                \"use strict\";\r\n\r\n                var conn = new HubConnectionBuilder().withUrl(\"/chatHub\").build();\r\n\r\n                //Disable send button until connection is established\r\n                //document.getElementById(\"sendButton\").disabled = true;            \r\n\r\n                conn.on(\"ReceiveMessage\", this.appendMessage);\r\n\r\n                conn.on(\"UpdateOnlineUsers\", this.updateOnlineUsers);\r\n\r\n                conn.start().then(this.connected).catch(function (err) {\r\n                    return console.error(err.toString());\r\n                });\r\n\r\n                this.connection = conn;\r\n            }\r\n        }\r\n    }\r\n</script>\r\n\r\n<style>\r\n    .userMargin {\r\n        margin-bottom: 20px;\r\n    }\r\n    .messageMargin {\r\n        margin-bottom: 20px;\r\n    }\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.userMargin {\n    margin-bottom: 20px;\n}\n.messageMargin {\n    margin-bottom: 20px;\n}\n", "", {"version":3,"sources":["C:/Users/dchen15/source/repos/DanChen1984/TrySignalR/TrySignalR.App/ClientApp/components/home/ClientApp\\components\\home/home-page.vue"],"names":[],"mappings":";AAqLA;IACA,oBAAA;CACA;AACA;IACA,oBAAA;CACA","file":"home-page.vue","sourcesContent":["<template>\r\n    <div>\r\n\r\n        <h3>Welcome to Chatting Room</h3>\r\n\r\n        <v-container grid-list-md>\r\n            <v-layout row wrap>\r\n\r\n                <v-flex xs1>\r\n                    <v-card>\r\n                        <v-container ref=\"userScroll\"\r\n                                        style=\"height: 600px\"\r\n                                        class=\"scroll-y\">\r\n                            <v-layout column>\r\n                                <div v-for=\"user in onlineUsers\" class=\"userMargin\">\r\n                                    {{ user }}\r\n                                </div>\r\n                            </v-layout>\r\n                        </v-container>                            \r\n                    </v-card>\r\n                </v-flex>\r\n\r\n                <v-flex xs11>\r\n                    <v-card>\r\n                        <v-container ref=\"myScroll\"\r\n                                     style=\"height: 600px\"\r\n                                     class=\"scroll-y\">\r\n                            <v-layout column>\r\n                                <div v-for=\"message in messageHistory\" class=\"messageMargin\">\r\n                                    {{ message }}\r\n                                </div>\r\n                            </v-layout>\r\n                        </v-container>\r\n                    </v-card>\r\n                </v-flex>\r\n\r\n                <v-flex xs11 offset-xs1>\r\n                    <v-card flat style=\"margin-left: 5px;\">\r\n                        <v-layout row>\r\n                            <v-text-field solo v-model=\"message\" placeholder=\"please type your message..\" v-on:keyup.native=\"sendMessageByEnter\"></v-text-field>\r\n                            <v-btn color=\"info\" v-on:click.native=\"sendMessage\">Send Message</v-btn>\r\n                        </v-layout>\r\n                    </v-card>\r\n                </v-flex>\r\n\r\n            </v-layout>\r\n        </v-container>\r\n\r\n\r\n    </div>\r\n</template>\r\n\r\n\r\n<script>\r\n    import { mapState } from 'vuex'\r\n    import { HubConnectionBuilder} from '@aspnet/signalr'\r\n\r\n    export default {\r\n\r\n        data() {\r\n            return {                \r\n            }\r\n        },\r\n\r\n        computed: {\r\n\r\n            message: {\r\n\r\n                get() {\r\n                    return this.$store.state.message\r\n                },\r\n\r\n                set(value) {\r\n                    this.$store.commit(\"updateState\", { key: \"message\", value: value })\r\n                }\r\n\r\n            },\r\n\r\n            ...mapState({\r\n\r\n                userLogin: 'userLogin',\r\n\r\n                connection: 'connection',\r\n\r\n                onlineUsers: 'onlineUsers',\r\n\r\n                messageHistory: 'messageHistory',  \r\n\r\n                isNewMessage: 'isNewMessage',\r\n            }),\r\n        },\r\n\r\n        methods: {\r\n\r\n            sendMessage() {                \r\n\r\n                if (this.message === null || this.message === \"\") {\r\n                    return;\r\n                }\r\n\r\n                try {\r\n                    this.connection.invoke(\"SendMessage\", this.userLogin, this.message).catch(function (err) {\r\n                        return console.error(err.toString());\r\n                    });\r\n\r\n                    this.$store.commit('updateState', { key: \"message\", value: \"\" })\r\n                }\r\n                catch (err) {\r\n                    window.alert(err)\r\n                    console.log(err)\r\n                }\r\n            },\r\n            sendMessageByEnter(e) {\r\n                if (e.keyCode === 13) {\r\n                    this.sendMessage();\r\n                }\r\n            },\r\n            appendMessage(user, message) {\r\n                this.$store.commit('updateMessageHistory', { message: \"[ \" + user + \" ]: \" + message })\r\n                this.$store.commit(\"updateState\", { key: 'isNewMessage', value: true })\r\n            },\r\n            connected() {\r\n                this.$store.commit('updateMessageHistory', { message: \"[ System ]: Connected. You can chat now..\" })\r\n\r\n                this.connection.invoke(\"Connected\", this.userLogin).catch(function (err) {\r\n                    return console.error(err.toString());\r\n                });\r\n            },\r\n            updateOnlineUsers(userList) {\r\n                this.$store.commit('updateState', { key: 'onlineUsers', value: userList })\r\n            },\r\n\r\n\r\n            scrollToBottom() {\r\n\r\n                if (!this.isNewMessage) {\r\n                    return;\r\n                }\r\n\r\n                var scroll = this.$refs[\"myScroll\"];\r\n                scroll.scrollTop = 999999;\r\n                this.$store.commit('updateState',  { key: 'isNewMessage', value: false })\r\n            }\r\n        }, \r\n\r\n        updated() {\r\n            this.scrollToBottom()\r\n        },\r\n\r\n        created() {\r\n\r\n            if (this.userLogin === undefined || this.userLogin === '') {\r\n                this.$router.push({ path: '/' });\r\n            }\r\n            else {\r\n\r\n                if (this.connection === undefined || this.connection === null) {\r\n                    \"use strict\";\r\n\r\n                    var conn = new HubConnectionBuilder().withUrl(\"/chatHub\").build();\r\n\r\n                    //Disable send button until connection is established\r\n                    //document.getElementById(\"sendButton\").disabled = true;            \r\n\r\n                    conn.on(\"ReceiveMessage\", this.appendMessage);\r\n\r\n                    conn.on(\"UpdateOnlineUsers\", this.updateOnlineUsers);\r\n\r\n                    conn.start().then(this.connected).catch(function (err) {\r\n                        return console.error(err.toString());\r\n                    });\r\n\r\n                    this.$store.commit('updateState', { key: 'connection', value: conn })\r\n                }\r\n                \r\n            }\r\n        }\r\n    }\r\n</script>\r\n\r\n<style>\r\n    .userMargin {\r\n        margin-bottom: 20px;\r\n    }\r\n    .messageMargin {\r\n        margin-bottom: 20px;\r\n    }\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -13940,7 +13940,7 @@ exports = module.exports = __webpack_require__(19)();
 
 
 // module
-exports.push([module.i, "\n.marginRight{\n    margin-right: 20px;\n}\n", "", {"version":3,"sources":["C:/Users/dchen15/source/repos/TrySignalR/TrySignalR.App/ClientApp/components/shared/ClientApp\\components\\shared/nav-menu.vue"],"names":[],"mappings":";AA8DA;IACA,mBAAA;CACA","file":"nav-menu.vue","sourcesContent":["<template>\n    <div class=\"main-nav\">\n        <nav class=\"navbar navbar-dark bg-dark\" style=\"padding:0\">\n\n            <v-container fluid>\n                <v-layout row>\n                    <v-flex xs2>\n                        <router-link class=\"navbar-brand\" to=\"/\"><icon :icon=\"['fab', 'microsoft']\" /> ASP.NET Core SignalR</router-link>\n                    </v-flex>\n                    <v-flex xs8>\n                        <ul style=\"list-style-type:none\">\n                            <li class=\"nav-item\" v-for=\"(route, index) in menuItems\" :key=\"index\" style=\"float: left;\">\n                                <router-link :to=\"route.path\" exact-active-class=\"active\">\n                                    <icon :icon=\"route.icon\" class=\"mr-2\" /><span>{{ route.display }}</span>\n                                </router-link>\n                            </li>\n                        </ul>\n                    </v-flex>\n                    <v-flex xs2>\n                        <v-layout justify-end>\r\n                            <div class=\"title font-weight-regular white--text marginRight\">Hello, {{userLogin}}</div>\r\n                        </v-layout>\n                    </v-flex>\n                </v-layout>\n            </v-container>\n\n        </nav>\n    </div>\n</template>\n\n<script>\n    import { routes } from '../../router/routes'\n\n    import { mapState } from 'vuex'\n\n    export default {\n        data() {\n            return {\n                routes\n            }\n        },\n        computed: {\r\n\r\n            ...mapState({\r\n                userLogin: 'userLogin',\r\n            }),\n\n            menuItems: function () {\n                var menuItems = []\n                this.routes.forEach((route) => {\n                    if (route.menu != 'false') {\n                        menuItems.push(route);\n                    }\n                });\n\n                return menuItems;\n            }\n        }\n    }\n</script>\n\n<style>\n    .marginRight{\r\n        margin-right: 20px;\r\n    }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.marginRight{\n    margin-right: 20px;\n}\n", "", {"version":3,"sources":["C:/Users/dchen15/source/repos/DanChen1984/TrySignalR/TrySignalR.App/ClientApp/components/shared/ClientApp\\components\\shared/nav-menu.vue"],"names":[],"mappings":";AA8DA;IACA,mBAAA;CACA","file":"nav-menu.vue","sourcesContent":["<template>\r\n    <div class=\"main-nav\">\r\n        <nav class=\"navbar navbar-dark bg-dark\" style=\"padding:0\">\r\n\r\n            <v-container fluid>\r\n                <v-layout row>\r\n                    <v-flex xs2>\r\n                        <router-link class=\"navbar-brand\" to=\"/\"><icon :icon=\"['fab', 'microsoft']\" /> ASP.NET Core SignalR</router-link>\r\n                    </v-flex>\r\n                    <v-flex xs8>\r\n                        <ul style=\"list-style-type:none\">\r\n                            <li class=\"nav-item\" v-for=\"(route, index) in menuItems\" :key=\"index\" style=\"float: left;\">\r\n                                <router-link :to=\"route.path\" exact-active-class=\"active\">\r\n                                    <icon :icon=\"route.icon\" class=\"mr-2\" /><span>{{ route.display }}</span>\r\n                                </router-link>\r\n                            </li>\r\n                        </ul>\r\n                    </v-flex>\r\n                    <v-flex xs2>\r\n                        <v-layout justify-end>\r\n                            <div class=\"title font-weight-regular white--text marginRight\">Hello, {{userLogin}}</div>\r\n                        </v-layout>\r\n                    </v-flex>\r\n                </v-layout>\r\n            </v-container>\r\n\r\n        </nav>\r\n    </div>\r\n</template>\r\n\r\n<script>\r\n    import { routes } from '../../router/routes'\r\n\r\n    import { mapState } from 'vuex'\r\n\r\n    export default {\r\n        data() {\r\n            return {\r\n                routes\r\n            }\r\n        },\r\n        computed: {\r\n\r\n            ...mapState({\r\n                userLogin: 'userLogin',\r\n            }),\r\n\r\n            menuItems: function () {\r\n                var menuItems = []\r\n                this.routes.forEach((route) => {\r\n                    if (route.menu != 'false') {\r\n                        menuItems.push(route);\r\n                    }\r\n                });\r\n\r\n                return menuItems;\r\n            }\r\n        }\r\n    }\r\n</script>\r\n\r\n<style>\r\n    .marginRight{\r\n        margin-right: 20px;\r\n    }\r\n</style>\r\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -16672,36 +16672,47 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     data: function data() {
-        return {
-            connection: null,
-
-            onlineUsers: [],
-
-            MessageHistory: ["[ System ]: Connecting.."],
-            Message: "",
-
-            isNewMessage: false
-        };
+        return {};
     },
 
 
-    computed: (0, _extends3.default)({}, (0, _vuex.mapState)({
-        userLogin: 'userLogin'
+    computed: (0, _extends3.default)({
+
+        message: {
+            get: function get() {
+                return this.$store.state.message;
+            },
+            set: function set(value) {
+                this.$store.commit("updateState", { key: "message", value: value });
+            }
+        }
+
+    }, (0, _vuex.mapState)({
+
+        userLogin: 'userLogin',
+
+        connection: 'connection',
+
+        onlineUsers: 'onlineUsers',
+
+        messageHistory: 'messageHistory',
+
+        isNewMessage: 'isNewMessage'
     })),
 
     methods: {
         sendMessage: function sendMessage() {
 
-            if (this.Message === null || this.Message === "") {
+            if (this.message === null || this.message === "") {
                 return;
             }
 
             try {
-                this.connection.invoke("SendMessage", this.userLogin, this.Message).catch(function (err) {
+                this.connection.invoke("SendMessage", this.userLogin, this.message).catch(function (err) {
                     return console.error(err.toString());
                 });
 
-                this.Message = "";
+                this.$store.commit('updateState', { key: "message", value: "" });
             } catch (err) {
                 window.alert(err);
                 console.log(err);
@@ -16713,19 +16724,18 @@ exports.default = {
             }
         },
         appendMessage: function appendMessage(user, message) {
-            this.MessageHistory.push("[ " + user + " ]: " + message);
-            this.isNewMessage = true;
+            this.$store.commit('updateMessageHistory', { message: "[ " + user + " ]: " + message });
+            this.$store.commit("updateState", { key: 'isNewMessage', value: true });
         },
         connected: function connected() {
-            this.MessageHistory.push("[ System ]: Connected. You can chat now..");
+            this.$store.commit('updateMessageHistory', { message: "[ System ]: Connected. You can chat now.." });
 
             this.connection.invoke("Connected", this.userLogin).catch(function (err) {
                 return console.error(err.toString());
             });
         },
         updateOnlineUsers: function updateOnlineUsers(userList) {
-            console.log(userList);
-            this.onlineUsers = userList;
+            this.$store.commit('updateState', { key: 'onlineUsers', value: userList });
         },
         scrollToBottom: function scrollToBottom() {
 
@@ -16735,7 +16745,7 @@ exports.default = {
 
             var scroll = this.$refs["myScroll"];
             scroll.scrollTop = 999999;
-            this.isNewMessage = false;
+            this.$store.commit('updateState', { key: 'isNewMessage', value: false });
         }
     },
 
@@ -16747,19 +16757,22 @@ exports.default = {
         if (this.userLogin === undefined || this.userLogin === '') {
             this.$router.push({ path: '/' });
         } else {
-            "use strict";
 
-            var conn = new _signalr.HubConnectionBuilder().withUrl("/chatHub").build();
+            if (this.connection === undefined || this.connection === null) {
+                "use strict";
 
-            conn.on("ReceiveMessage", this.appendMessage);
+                var conn = new _signalr.HubConnectionBuilder().withUrl("/chatHub").build();
 
-            conn.on("UpdateOnlineUsers", this.updateOnlineUsers);
+                conn.on("ReceiveMessage", this.appendMessage);
 
-            conn.start().then(this.connected).catch(function (err) {
-                return console.error(err.toString());
-            });
+                conn.on("UpdateOnlineUsers", this.updateOnlineUsers);
 
-            this.connection = conn;
+                conn.start().then(this.connected).catch(function (err) {
+                    return console.error(err.toString());
+                });
+
+                this.$store.commit('updateState', { key: 'connection', value: conn });
+            }
         }
     }
 };
@@ -16787,7 +16800,7 @@ exports.default = {
 
     methods: {
         join: function join() {
-            this.$store.commit('userJoin', { userLogin: this.username });
+            this.$store.commit('updateState', { key: 'userLogin', value: this.username });
             this.$router.push({ path: 'home' });
         },
         joinByEnter: function joinByEnter(e) {
@@ -22980,10 +22993,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _defineProperty2 = __webpack_require__(166);
-
-var _defineProperty3 = _interopRequireDefault(_defineProperty2);
-
 var _promise = __webpack_require__(95);
 
 var _promise2 = _interopRequireDefault(_promise);
@@ -22992,7 +23001,11 @@ var _assign = __webpack_require__(94);
 
 var _assign2 = _interopRequireDefault(_assign);
 
-var _mutations;
+var _defineProperty2 = __webpack_require__(166);
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _state, _mutations;
 
 var _vue = __webpack_require__(5);
 
@@ -23010,11 +23023,39 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _vue2.default.use(_vuex2.default);
 
-var state = {
+var state = (_state = {
+    isBusy: false,
+    busyContent: 'please wait..',
 
-    userLogin: ''
+    dialog: false,
+    resolve: null,
+    reject: null,
+    message: null,
+    title: null,
+    optionsDialog: {
+        color: 'primary',
+        width: 400,
+        zIndex: 200
+    },
 
-};
+    snackbar: false,
+    text: 'Hello, I\'m a snackbar',
+    optionsMessage: {
+        color: 'primary',
+        mode: '',
+        timeout: 6000,
+        vertical: ''
+    },
+
+    userLogin: '',
+
+    connection: null,
+
+    onlineUsers: [],
+
+    messageHistory: ["[ System ]: Connecting.."]
+
+}, (0, _defineProperty3.default)(_state, 'message', ""), (0, _defineProperty3.default)(_state, 'isNewMessage', false), _state);
 
 var mutations = (_mutations = {
     showBusyIndicator: function (_showBusyIndicator) {
@@ -23059,8 +23100,29 @@ var mutations = (_mutations = {
     state.optionsMessage = (0, _assign2.default)(state.optionsMessage, payload.options);
 }), (0, _defineProperty3.default)(_mutations, 'closeMessage', function closeMessage() {
     state.snackbar = false;
-}), (0, _defineProperty3.default)(_mutations, 'userJoin', function userJoin(state, payload) {
-    state.userLogin = payload.userLogin;
+}), (0, _defineProperty3.default)(_mutations, 'updateMessageHistory', function updateMessageHistory(state, payload) {
+    state.messageHistory.push(payload.message);
+}), (0, _defineProperty3.default)(_mutations, 'updateState', function updateState(state, payload) {
+
+    if (payload.key === 'userLogin') {
+        state.userLogin = payload.value;
+    }
+
+    if (payload.key === 'connection') {
+        state.connection = payload.value;
+    }
+
+    if (payload.key === 'onlineUsers') {
+        state.onlineUsers = payload.value;
+    }
+
+    if (payload.key === 'message') {
+        state.message = payload.value;
+    }
+
+    if (payload.key === 'isNewMessage') {
+        state.isNewMessage = payload.value;
+    }
 }), _mutations);
 
 var actions = {
@@ -27891,7 +27953,7 @@ var render = function() {
                           _c(
                             "v-layout",
                             { attrs: { column: "" } },
-                            _vm._l(_vm.MessageHistory, function(message) {
+                            _vm._l(_vm.messageHistory, function(message) {
                               return _c(
                                 "div",
                                 { staticClass: "messageMargin" },
@@ -27942,11 +28004,11 @@ var render = function() {
                               }
                             },
                             model: {
-                              value: _vm.Message,
+                              value: _vm.message,
                               callback: function($$v) {
-                                _vm.Message = $$v
+                                _vm.message = $$v
                               },
-                              expression: "Message"
+                              expression: "message"
                             }
                           }),
                           _vm._v(" "),

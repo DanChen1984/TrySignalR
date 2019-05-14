@@ -6,62 +6,53 @@ Vue.use(Vuex)
 
 // STATE
 const state = {
+    //Common Module
+    //busy indicator
+    isBusy: false,
+    busyContent: 'please wait..',
 
+    //dialog
+    dialog: false,
+    resolve: null,
+    reject: null,
+    message: null,
+    title: null,
+    optionsDialog: {
+        color: 'primary',
+        width: 400,
+        zIndex: 200
+    },
+
+    //message
+    snackbar: false,
+    text: 'Hello, I\'m a snackbar',
+    optionsMessage: {
+        color: 'primary',
+        mode: '',
+        timeout: 6000,
+        vertical: ''
+    },
+
+    //chatting room
     userLogin: '',
 
-    //testCount:0,
+    connection: null,
 
-    //isBusy: false,
-    //busyContent: 'please wait..',
+    onlineUsers: [],
 
-    //dialog: false,
-    //resolve: null,
-    //reject: null,
-    //message: null,
-    //title: null,
-    //optionsDialog: {
-    //    color: 'primary',
-    //    width: 400,
-    //    zIndex: 200
-    //},
+    messageHistory: ["[ System ]: Connecting.."],
 
-    //snackbar: false,
-    //text: 'Hello, I\'m a snackbar',
-    //optionsMessage: {
-    //    color: 'primary',
-    //    mode: '',
-    //    timeout: 6000,
-    //    vertical: ''
-    //},
+    message: "",
 
-    //detailWpid: 0,
+    isNewMessage: false,
 
-    ////Filters
-    //statusOptions: [],
-    //selectedStatus: null,
-
-    //divisionOptions: [],
-    //selectedDivision: null,
-
-    //dcOptions: [],
-    //selectedDc: null,
-
-    //reasonCodeOptions: [],
-    //selectedReasonCode: null,
-
-    //selectedWsoNbr: null,
-
-    //selectedDateFrom: null,
-    //menuFrom: false,
-
-    //selectedDateTo: null,
-    //menuTo: false,
-
-    //selectedIncludeUnmatched: true,
 }
 
 // MUTATIONS
 const mutations = {
+
+    //Common Module
+    //busy indicator
     showBusyIndicator(state) {
         showBusyIndicator(state, 'please wait..')
     },
@@ -73,7 +64,7 @@ const mutations = {
         state.isBusy = false
     },
 
-
+    //dialog
     showConfirmDialog(state, payload) {
         state.dialog = true
         state.title = payload.title
@@ -93,6 +84,7 @@ const mutations = {
         state.dialog = false
     },
 
+    //message
     showMessage(state, payload) {
 
         state.optionsMessage.color = 'primary'
@@ -103,77 +95,41 @@ const mutations = {
     },
     closeMessage() {
         state.snackbar = false
+    }, 
+
+    //chatting room
+    updateMessageHistory(state, payload) {
+        state.messageHistory.push(payload.message)
     },
 
-    userJoin(state, payload) {
-        state.userLogin = payload.userLogin
-    },
+    updateState(state, payload) {
 
-    //selectWpid(state, payload) {
-    //    state.detailWpid = payload.detailWpid
-    //},
+        if (payload.key === 'userLogin') {
+            state.userLogin = payload.value
+        }
 
-    //setFilterOptions(state, payload) {
-    //    state.statusOptions = payload.response.data.statusOptions
-    //    state.divisionOptions = payload.response.data.divOptions
-    //    state.dcOptions = payload.response.data.dcOptions
-    //    state.reasonCodeOptions = payload.response.data.reasonCodeOptions
+        if (payload.key === 'connection') {
+            state.connection = payload.value
+        }
 
-    //    if (state.statusOptions.length > 0) {
-    //        state.selectedStatus = state.statusOptions[0]
-    //    }
-    //},
+        if (payload.key === 'onlineUsers') {
+            state.onlineUsers = payload.value
+        }
 
-    //updateState(state, payload) {
+        if (payload.key === 'message') {
+            state.message = payload.value
+        }
 
-    //    if (payload.key === 'selectedStatus') {
-    //        state.selectedStatus = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedDivision') {
-    //        state.selectedDivision = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedDc') {
-    //        state.selectedDc = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedReasonCode') {
-    //        state.selectedReasonCode = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedReasonCode') {
-    //        state.selectedReasonCode = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedWsoNbr') {
-    //        state.selectedWsoNbr = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedDateFrom') {
-    //        state.selectedDateFrom = payload.value
-    //    }
-
-    //    if (payload.key === 'menuFrom') {
-    //        state.menuFrom = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedDateTo') {
-    //        state.selectedDateTo = payload.value
-    //    }
-
-    //    if (payload.key === 'selectedIncludeUnmatched') {
-    //        state.selectedIncludeUnmatched = payload.value
-    //    }
-    //}
+        if (payload.key === 'isNewMessage') {
+            state.isNewMessage = payload.value
+        }
+        
+    }
 }
 
 // ACTIONS
 const actions = ({
-  //setCounter ({ commit }, obj) {
-  //  commit(MAIN_SET_COUNTER, obj)
-  //}
-
+  
     showConfirmDialog(context, payload) {
 
         context.commit('showConfirmDialog', payload)
@@ -213,7 +169,6 @@ const actions = ({
     //        console.log(err)
     //    }
     //},
-
 
 })
 

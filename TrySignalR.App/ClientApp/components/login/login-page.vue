@@ -43,7 +43,7 @@
         methods: {
 
             join() {
-                this.$store.commit('userJoin', { userLogin: this.username })
+                this.$store.commit('updateState', { key: 'userLogin', value: this.username })
                 this.$router.push({ path: 'home' })                
             },
             joinByEnter(e) {
