@@ -9,7 +9,7 @@
                 <v-flex xs1>
                     <v-card>
                         <v-container ref="userScroll"
-                                        style="height: 600px"
+                                        style="height: 400px"
                                         class="scroll-y">
                             <v-layout column>
                                 <div v-for="user in onlineUsers" class="userMargin">
@@ -23,7 +23,7 @@
                 <v-flex xs11>
                     <v-card>
                         <v-container ref="myScroll"
-                                     style="height: 600px"
+                                     style="height: 400px"
                                      class="scroll-y">
                             <v-layout column>
                                 <div v-for="message in messageHistory" class="messageMargin">
