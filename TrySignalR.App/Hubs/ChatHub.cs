@@ -50,7 +50,7 @@ namespace TrySignalR.App.Hubs
 
                 Clients.All.SendAsync("UpdateOnlineUsers", userList);
 
-                Clients.All.SendAsync("ReceiveMessage", "System", string.Format("Welcome [ {0} ] to joinin the chatting room.", user));
+                Clients.All.SendAsync("ReceiveMessage", "System", string.Format("Welcome [ {0} ] to join the chatting room.", user));
             });
         }
 

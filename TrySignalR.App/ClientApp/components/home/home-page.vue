@@ -6,7 +6,7 @@
         <v-container grid-list-md>
             <v-layout row wrap>
 
-                <v-flex xs1>
+                <v-flex xs2>
                     <v-card>
                         <v-container ref="userScroll"
                                         style="height: 400px"
@@ -20,7 +20,7 @@
                     </v-card>
                 </v-flex>
 
-                <v-flex xs11>
+                <v-flex xs10>
                     <v-card>
                         <v-container ref="myScroll"
                                      style="height: 400px"
@@ -34,13 +34,11 @@
                     </v-card>
                 </v-flex>
 
-                <v-flex xs11 offset-xs1>
-                    <v-card flat style="margin-left: 5px;">
-                        <v-layout row>
-                            <v-text-field solo v-model="message" placeholder="please type your message.." v-on:keyup.native="sendMessageByEnter"></v-text-field>
-                            <v-btn color="info" v-on:click.native="sendMessage">Send Message</v-btn>
-                        </v-layout>
-                    </v-card>
+                <v-flex xs10 offset-xs2>                    
+                    <v-layout row style="margin-top: 2px; margin-left: 2px;">
+                        <v-text-field solo v-model="message" placeholder="please type your message.." v-on:keyup.native="sendMessageByEnter" ></v-text-field>
+                        <v-btn color="info" v-on:click.native="sendMessage">Send Message</v-btn>
+                    </v-layout>
                 </v-flex>
 
             </v-layout>
